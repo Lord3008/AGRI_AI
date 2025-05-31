@@ -5,3 +5,4 @@ gtts
 numpy
 streamlit
 google-generativeai
+dotenv
