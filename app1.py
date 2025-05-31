@@ -13,7 +13,7 @@ gemini_api_key = os.getenv("GEMINI_API_KEY")
 
 
 # Initialize the Google GenAI client
-client = genai.Client(api_key="gemini_api_key")
+client = genai.Client(api_key=gemini_api_key)
 
 # Load pre-trained MobileNetV2 model
 vision_model = MobileNetV2(weights="imagenet")
