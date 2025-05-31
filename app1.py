@@ -9,7 +9,7 @@ from google import genai
 import os
 from dotenv import load_dotenv
 #load_dotenv()
-gemini_api_key = os.getenv["GEMINI_API_KEY"]
+gemini_api_key = os.getenv("GEMINI_API_KEY")
 
 
 # Initialize the Google GenAI client
