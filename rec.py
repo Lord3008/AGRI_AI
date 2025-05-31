@@ -1,8 +1,13 @@
 import streamlit as st
 from google import genai
 
+import os
+from dotenv import load_dotenv
+load_dotenv()
+gemini_api_key = os.getenv("GEMINI_API_KEY")
+
 # Configure Gemini AI Client
-client = genai.Client(api_key="AIzaSyBfpSy8Z58lhAN2nZI8aV8fwS01RRb_N78")
+client = genai.Client(api_key=gemini_api_key)
 
 # Set Streamlit page config
 st.set_page_config(page_title="KrushiSaathi - Smart Crop Recommendation", layout="wide")
