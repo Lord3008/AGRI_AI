@@ -6,9 +6,14 @@ from tensorflow.keras.preprocessing import image
 from tensorflow.keras.applications.mobilenet_v2 import preprocess_input, decode_predictions
 from PIL import Image
 from google import genai
+import os
+from dotenv import load_dotenv
+load_dotenv()
+gemini_api_key = os.environ["GEMINI_API_KEY"]
+
 
 # Initialize the Google GenAI client
-client = genai.Client(api_key="AIzaSyBfpSy8Z58lhAN2nZI8aV8fwS01RRb_N78")
+client = genai.Client(api_key="gemini_api_key")
 
 # Load pre-trained MobileNetV2 model
 vision_model = MobileNetV2(weights="imagenet")
