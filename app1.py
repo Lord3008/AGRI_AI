@@ -6,9 +6,10 @@ from tensorflow.keras.preprocessing import image
 from tensorflow.keras.applications.mobilenet_v2 import preprocess_input, decode_predictions
 from PIL import Image
 from google import genai
+
 import os
 from dotenv import load_dotenv
-#load_dotenv()
+load_dotenv()
 gemini_api_key = os.getenv("GEMINI_API_KEY")
 
 
