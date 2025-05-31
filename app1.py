@@ -8,8 +8,8 @@ from PIL import Image
 from google import genai
 import os
 from dotenv import load_dotenv
-load_dotenv()
-gemini_api_key = os.environ["GEMINI_API_KEY"]
+#load_dotenv()
+gemini_api_key = os.getenv["GEMINI_API_KEY"]
 
 
 # Initialize the Google GenAI client
